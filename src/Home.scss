@@ -1,0 +1,140 @@
+#homepage {
+    background-color: #9bd3f4;
+
+    #intro {
+        color: #0277b5;
+        height: 100vh;
+    }
+    #intro hr {
+        background-color: white;
+    }
+
+    @keyframes name {
+        from {
+            color: #9bd3f4;
+        }
+        to {
+            color: #0277b5;
+        }
+    }
+    @keyframes lineAnimation {
+        100% {
+            width: 65%;
+        }
+    }
+    #line {
+        width: 1px;
+        border-bottom: 3px solid #f29c33;
+        animation: lineAnimation;
+        animation-fill-mode: forwards;
+        animation-duration: 2s;
+    }
+    #intro h1 {
+        font-size: 75px;
+        animation: name;
+        animation-duration: 3s;
+        animation-fill-mode: forwards;
+    }
+    #intro h2 {
+        color: #9bd3f4;
+        text-align: center;
+        font-size: 35px;
+        padding-top: 10px;
+        animation: name;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+    #intro h2:first-of-type {
+        animation-delay: 1s;
+    }
+    #intro h2:nth-of-type(2) {
+        animation-delay: 1.5s;
+    }
+    #intro h2:nth-of-type(3) {
+        animation-delay: 2s;
+    }
+    #intro code {
+        font-size: 1.75rem;
+    }
+    #arrowDown {
+        font-size: 75px;
+        position: absolute;
+        bottom: 30px;
+        left: calc(50% - 37.5px);
+    }
+    #about {
+        color: #0277b5;
+        background-color: #b6e1fa;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 4px 4px 4px 3px black;
+    }
+    #about h5 {
+        line-height: 200%;
+        color: #545454;
+    }
+
+    #contact {
+        margin-top: 20px;
+        background-color: #064943;
+        padding: 30px;
+        color: #ffd699;
+        border-radius: 20px;
+        box-shadow: 4px 4px 4px 3px black;
+    }
+
+    h5,
+    p {
+        color: white;
+    }
+
+    form input {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 10px;
+    }
+    form textarea {
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    form .btn-primary {
+        width: 100%;
+        margin-top: 15px;
+        background-color: #124559;
+    }
+
+    #portfolio {
+        margin-top: 20px;
+        margin-bottom: 40px;
+        background-color: #660522;
+        padding: 30px;
+        color: #ffd699;
+        border-radius: 20px;
+        box-shadow: 4px 4px 4px 3px black;
+    }
+    .card-body p {
+        color: black;
+    }
+
+    footer {
+        background-color: black;
+        color: white;
+        width: 100%;
+    }
+    main {
+        background-color: #064943;
+        color: white;
+        padding: 30px;
+    }
+    main img {
+        border-radius: 10px;
+    }
+    .stack {
+        background-color: black;
+        color: white;
+        padding: 3px;
+    }
+}
