@@ -53,15 +53,23 @@
     #intro h2:nth-of-type(3) {
         animation-delay: 2s;
     }
-    #intro code {
-        font-size: 1.75rem;
-    }
     #arrowDown {
+        color: #9bd3f4;
+
         font-size: 75px;
         position: absolute;
         bottom: 30px;
         left: calc(50% - 37.5px);
+        // color: #0277b5;
+        animation: name;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        animation-delay: 2.5s;
     }
+    #intro code {
+        font-size: 1.75rem;
+    }
+
     #about {
         color: #0277b5;
         background-color: #b6e1fa;
@@ -108,12 +116,16 @@
 
     #portfolio {
         margin-top: 20px;
-        margin-bottom: 40px;
+        padding-bottom: 40px;
         background-color: #660522;
         padding: 30px;
         color: #ffd699;
         border-radius: 20px;
         box-shadow: 4px 4px 4px 3px black;
+    }
+
+    .card-title {
+        color: black;
     }
     .card-body p {
         color: black;

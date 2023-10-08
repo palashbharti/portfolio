@@ -63,7 +63,7 @@ const Home = () => {
                 </section>
                 <section id="about">
                     <h1>About</h1>
-                    <h4 class="text-center">
+                    <h4>
                         A Web Developer who marries code with digital marketing
                         finesse.{" "}
                     </h4>{" "}
@@ -81,12 +81,18 @@ const Home = () => {
                     <div className="row">
                         <div className="col-sm-12 col-md-6">
                             <p>
-                                Want to get in touch? Email me or fill out the
-                                form here.
+                                Want to get in touch? Email me at{" "}
+                                <Link
+                                    style={{ color: "#ffd699" }}
+                                    to="mailto:contact@palashbharti.com"
+                                >
+                                    contact@palashbharti.com
+                                </Link>
                             </p>
                         </div>
                         {/* <!--End of Contact Text--> */}
-                        <div className="col-sm-12 col-md-6">
+                        {/* FORM TO BE UPLOADED SOON */}
+                        {/* <div className="col-sm-12 col-md-6">
                             <form>
                                 <div className="row">
                                     <div className="col">
@@ -102,7 +108,6 @@ const Home = () => {
                                         />
                                     </div>
                                 </div>
-                                {/* <!--End of First and Last Names field--> */}
                                 <input
                                     type="email"
                                     id="email"
@@ -116,78 +121,95 @@ const Home = () => {
                                     Send ✉️
                                 </button>
                             </form>
-                        </div>
+                        </div> */}
                     </div>
                 </section>
                 {/* <!--End of contact section--> */}
-                <section id="portfolio">
+                <section id="portfolio" className="pb-5">
                     <h1>Portfolio</h1>
-                    <p>
-                        To view more details about the project, click on any of
-                        the cards.
-                    </p>
+
                     <div className="row">
                         <div className="col-4">
                             <div className="card">
                                 {/* <!--CARD 1--> */}
                                 <img
-                                    src="https://portfolio.maxmatthe.ws/weatherApp.png"
+                                    src="/flixmatch-logo.png"
                                     className="card-img-top"
                                     alt="screenshot of weather app"
                                 />
                                 <div className="card-body">
-                                    <h5 className="card-title">Weather App</h5>
+                                    <h5 className="card-title">FlixMatch</h5>
                                     <p className="card-text">
-                                        First front end project modeled after a
-                                        weather app
+                                        A web app that finds you a movie-buddy
+                                        based on your movie ratings
                                     </p>
-                                    <a
-                                        href="weather.html"
+                                    <p className="card-text">
+                                        Employs ReactJS, Sequelize, Postgres and
+                                        Bootstrap
+                                    </p>
+                                    <Link
+                                        to="https://flixmatch.co"
                                         className="btn btn-primary"
                                     >
-                                        Make It Rain
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="col-4">
-                            <div className="card">
-                                {/* <!--CARD 2--> */}
-                                <img
-                                    src="https://portfolio.maxmatthe.ws/feedbackForm.png"
-                                    className="card-img-top"
-                                    alt="screenshot of weather app"
-                                />
-                                <div className="card-body">
-                                    <h5 className="card-title">Booksellers</h5>
-                                    <p className="card-text">
-                                        Feedback form modeled after Google
-                                        Forms.
-                                    </p>
-                                    <Link to="/new-york-times-bestsellers">
-                                        <h1>Bestsellers</h1>
+                                        See the design
                                     </Link>
                                 </div>
                             </div>
                         </div>
+                        {/* <!--Card 2: Theodore's Restaurant--> */}
                         <div className="col-4">
                             <div className="card">
-                                {/* <!--CARD 3 MAXFLIX--> */}
                                 <img
-                                    src="https://portfolio.maxmatthe.ws/maxflix.png"
+                                    src="/theodores_restaurant_logo_500×200.png"
                                     className="card-img-top"
                                     alt="screenshot of weather app"
                                 />
                                 <div className="card-body">
-                                    <h5 className="card-title">Maxflix</h5>
+                                    <h5 className="card-title">
+                                        Theodore's Restaurant
+                                    </h5>
                                     <p className="card-text">
-                                        My first project all by myself!
-                                        Recreation of a particular streaming
-                                        service.
+                                        A website built for a local restaurant.
                                     </p>
-                                    <a href="#" className="btn btn-primary">
-                                        Get Streaming
-                                    </a>
+                                    <p className="card-text">
+                                        Employs Wordpress and Elementor
+                                    </p>
+                                    <Link
+                                        to="/theodores-restaurant"
+                                        className="btn btn-primary"
+                                    >
+                                        See the design
+                                    </Link>
+                                </div>
+                            </div>
+                        </div>
+                        {/* <!--Card 3: NYT Bestsellers--> */}
+
+                        <div className="col-4">
+                            <div className="card">
+                                {/* <!--CARD 2--> */}
+                                <img
+                                    src="/bestsellers.png"
+                                    className="card-img-top"
+                                    alt="screenshot of weather app"
+                                />
+                                <div className="card-body">
+                                    <h5 className="card-title">
+                                        New York Times Bestsellers
+                                    </h5>
+                                    <p className="card-text">
+                                        A mini-app pulling top New York Times
+                                        Bestsellers from the API
+                                    </p>
+                                    <p className="card-text">
+                                        Employs HTML, CSS and JavaScript
+                                    </p>
+                                    <Link
+                                        to="/new-york-times-bestsellers"
+                                        className="btn btn-primary"
+                                    >
+                                        Check it out
+                                    </Link>
                                 </div>
                             </div>
                         </div>

@@ -1,6 +1,7 @@
 import "./App.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Bestsellers from "./Bestsellers";
+import Theodores from "./Theodores";
 import Home from "./Home";
 
 function App() {
@@ -12,6 +13,10 @@ function App() {
         {
             path: "/new-york-times-bestsellers",
             element: <Bestsellers />,
+        },
+        {
+            path: "/theodores-restaurant",
+            element: <Theodores />,
         },
     ]);
 

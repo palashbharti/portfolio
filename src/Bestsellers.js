@@ -1,6 +1,5 @@
 import { useState, useEffect } from "react";
 import "./Bestsellers.scss";
-import { FaBeer } from "react-icons/fa";
 
 const Bestsellers = () => {
     const [dropdown, setDropdown] = useState([]);
@@ -109,30 +108,8 @@ const Bestsellers = () => {
     */
     return (
         <div id="bestsellerssStyle">
-            <h1>These are Bestsellers</h1>
-            <div className="container pt-4">
+            <div className="container pt-4 pb-4">
                 <h1 className="text-center">New York Times Bestsellers</h1>
-                <h2 className="text-center mt-4">
-                    Click an Arrow or Pick a Category
-                </h2>
-                {/* <!-- slider starts --> */}
-                <div className="d-flex justify-content-center align-items-center">
-                    <div id="arrow-left" className="arrow">
-                        <span className="material-symbols-outlined">
-                            arrow_back_ios
-                        </span>
-                    </div>
-
-                    <div className="imgSlider">
-                        <img src="" />
-                    </div>
-                    <div id="arrow-right" className="arrow">
-                        <span className="material-symbols-outlined">
-                            arrow_forward_ios
-                        </span>
-                    </div>
-                </div>
-                {/* <!-- end slider --> */}
                 <select
                     className="mt-4 mb-4 ms-auto me-auto text-center"
                     id="dropdown"
@@ -153,7 +130,7 @@ const Bestsellers = () => {
                 <div id="output">
                     {titles.map((title) => {
                         return (
-                            <div className="card mb-3">
+                            <div className="card pb-3">
                                 <div className="row g-0">
                                     <div className="col-sm-4 col-md-4 text-sm-center text-md-right">
                                         <img
