@@ -5,9 +5,6 @@
         color: #0277b5;
         height: 100vh;
     }
-    #intro hr {
-        background-color: white;
-    }
 
     @keyframes name {
         from {
@@ -60,7 +57,6 @@
         position: absolute;
         bottom: 30px;
         left: calc(50% - 37.5px);
-        // color: #0277b5;
         animation: name;
         animation-duration: 2s;
         animation-fill-mode: forwards;
@@ -68,6 +64,12 @@
     }
     #intro code {
         font-size: 1.75rem;
+    }
+
+    .yellow-ul {
+        text-decoration: underline;
+        text-decoration-color: #f29c33;
+        text-underline-offset: 0.3em;
     }
 
     #about {

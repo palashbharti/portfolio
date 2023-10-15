@@ -32,8 +32,14 @@ const Home = () => {
             <div className="container">
                 <section
                     id="intro"
-                    className="d-flex flex-column justify-content-center align-items-center"
+                    className="d-flex flex-column  align-items-center pt-1"
                 >
+                    <div className="text-center col-xs-8 col-md-2 mb-5">
+                        <img
+                            style={{ width: "100%", borderRadius: "100%" }}
+                            src="./palash.jpg"
+                        />
+                    </div>
                     <h1 className="text-center">Palash Bharti</h1>
                     <div id="line"></div>
                     <br />
@@ -62,10 +68,9 @@ const Home = () => {
                     </a>
                 </section>
                 <section id="about">
-                    <h1>About</h1>
+                    <h3 className="yellow-ul mb-4">About</h3>
                     <h4>
-                        A Web Developer who marries code with digital marketing
-                        finesse.{" "}
+                        Me = Web Developer + Digital Marketer + Analyst{" "}
                     </h4>{" "}
                     <h5>
                         {" "}
@@ -77,7 +82,7 @@ const Home = () => {
                     </h5>
                 </section>
                 <section id="contact">
-                    <h1>Contact</h1>
+                    <h3 className="yellow-ul mb-4">Contact</h3>
                     <div className="row">
                         <div className="col-sm-12 col-md-6">
                             <p>
@@ -126,11 +131,11 @@ const Home = () => {
                 </section>
                 {/* <!--End of contact section--> */}
                 <section id="portfolio" className="pb-5">
-                    <h1>Portfolio</h1>
+                    <h3 className="yellow-ul mb-4">Projects</h3>
 
                     <div className="row">
-                        <div className="col-4">
-                            <div className="card">
+                        <div className="col-md-4">
+                            <div className="card mb-3">
                                 {/* <!--CARD 1--> */}
                                 <img
                                     src="/flixmatch-logo.png"
@@ -157,8 +162,8 @@ const Home = () => {
                             </div>
                         </div>
                         {/* <!--Card 2: Theodore's Restaurant--> */}
-                        <div className="col-4">
-                            <div className="card">
+                        <div className="col-md-4">
+                            <div className="card mb-3">
                                 <img
                                     src="/theodores_restaurant_logo_500×200.png"
                                     className="card-img-top"
@@ -185,8 +190,8 @@ const Home = () => {
                         </div>
                         {/* <!--Card 3: NYT Bestsellers--> */}
 
-                        <div className="col-4">
-                            <div className="card">
+                        <div className="col-md-4">
+                            <div className="card mb-3">
                                 {/* <!--CARD 2--> */}
                                 <img
                                     src="/bestsellers.png"
