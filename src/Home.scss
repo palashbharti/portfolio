@@ -26,6 +26,7 @@
         animation-fill-mode: forwards;
         animation-duration: 2s;
     }
+
     #intro h1 {
         font-size: 75px;
         animation: name;
@@ -65,21 +66,17 @@
     #intro code {
         font-size: 1.75rem;
     }
-
     .yellow-ul {
         text-decoration: underline;
         text-decoration-color: #f29c33;
-        text-underline-offset: 0.3em;
+        text-underline-offset: 0.4em;
     }
 
-    #about {
+    .about {
         color: #0277b5;
-        background-color: #b6e1fa;
         padding: 30px;
-        border-radius: 20px;
-        box-shadow: 4px 4px 4px 3px black;
     }
-    #about h5 {
+    .about h5 {
         line-height: 200%;
         color: #545454;
     }
@@ -117,15 +114,29 @@
     }
 
     #portfolio {
+        color: #0277b5;
+        padding: 30px;
         margin-top: 20px;
         padding-bottom: 40px;
-        background-color: #660522;
-        padding: 30px;
-        color: #ffd699;
-        border-radius: 20px;
-        box-shadow: 4px 4px 4px 3px black;
     }
 
+    .btn-outline-primary {
+        color: #0277b5;
+        font-weight: 700;
+        border-color: #f29c33;
+        border-width: 2px;
+    }
+
+    .btn-outline-primary:hover {
+        color: #272838;
+        background-color: #f29c33;
+    }
+
+    .card {
+        background-color: transparent;
+        color: #0277b5;
+        border-color: transparent;
+    }
     .card-title {
         color: black;
     }

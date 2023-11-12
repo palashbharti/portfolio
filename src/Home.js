@@ -4,35 +4,10 @@ import "./Home.scss";
 const Home = () => {
     return (
         <div id="homepage">
-            <palette>
-                <color
-                    name="Honolulu Blue"
-                    hex="0277b5"
-                    r="2"
-                    g="119"
-                    b="181"
-                />
-                <color name="Baby blue" hex="9bd3f4" r="155" g="211" b="244" />
-                <color
-                    name="Uranian Blue"
-                    hex="b6e1fa"
-                    r="182"
-                    g="225"
-                    b="250"
-                />
-                <color
-                    name="Carrot orange"
-                    hex="f29c33"
-                    r="242"
-                    g="156"
-                    b="51"
-                />
-                <color name="Davy's gray" hex="545454" r="84" g="84" b="84" />
-            </palette>
             <div className="container">
                 <section
                     id="intro"
-                    className="d-flex flex-column  align-items-center pt-1"
+                    className="d-flex flex-column  align-items-center pt-5"
                 >
                     <div className="text-center col-xs-8 col-md-2 mb-5">
                         <img
@@ -44,20 +19,20 @@ const Home = () => {
                     <div id="line"></div>
                     <br />
                     <h2>
-                        <span class="material-symbols-outlined">code</span>{" "}
-                        Junior Web Developer
+                        <span class="material-symbols-outlined">code</span> Web
+                        Design & Development
+                    </h2>
+                    <h2>
+                        <span class="material-symbols-outlined">campaign</span>{" "}
+                        Digital Marketing
                     </h2>
                     <h2>
                         <span class="material-symbols-outlined">
                             monitoring
                         </span>{" "}
-                        Digital Analytics Implementation Specialist
+                        Analytics
                     </h2>
-                    <h2>
-                        <span class="material-symbols-outlined">campaign</span>{" "}
-                        Digital Marketing Specialist
-                    </h2>
-                    {/* <code>console.log("Hello World");</code> */}
+
                     <a href="#about">
                         <span
                             id="arrowDown"
@@ -67,71 +42,36 @@ const Home = () => {
                         </span>
                     </a>
                 </section>
-                <section id="about">
-                    <h3 className="yellow-ul mb-4">About</h3>
-                    <h4>
-                        Me = Web Developer + Digital Marketer + Analyst{" "}
-                    </h4>{" "}
-                    <h5>
-                        {" "}
-                        With a diverse skillset in full stack web development, I
-                        craft seamless digital journeys. My background in
-                        Digital Marketing and Analytics enhances my approach,
-                        creating websites that not only function flawlessly but
-                        engage with purpose. Let's innovate together.
-                    </h5>
-                </section>
-                <section id="contact">
-                    <h3 className="yellow-ul mb-4">Contact</h3>
-                    <div className="row">
-                        <div className="col-sm-12 col-md-6">
-                            <p>
-                                Want to get in touch? Email me at{" "}
-                                <Link
-                                    style={{ color: "#ffd699" }}
-                                    to="mailto:contact@palashbharti.com"
-                                >
-                                    contact@palashbharti.com
-                                </Link>
-                            </p>
-                        </div>
-                        {/* <!--End of Contact Text--> */}
-                        {/* FORM TO BE UPLOADED SOON */}
-                        {/* <div className="col-sm-12 col-md-6">
-                            <form>
-                                <div className="row">
-                                    <div className="col">
-                                        <input
-                                            type="text"
-                                            placeholder="First Name"
-                                        />
-                                    </div>
-                                    <div className="col">
-                                        <input
-                                            type="text"
-                                            placeholder="Last Name"
-                                        />
-                                    </div>
-                                </div>
-                                <input
-                                    type="email"
-                                    id="email"
-                                    placeholder="Email"
-                                />
-                                <textarea placeholder="Enter your message here..."></textarea>
-                                <button
-                                    tyoe="button"
-                                    className="btn btn-primary"
-                                >
-                                    Send ✉️
-                                </button>
-                            </form>
-                        </div> */}
+                <section id="about" className="about">
+                    <h2 className="text-center mb-4 yellow-ul">
+                        My work = <strong>TLC</strong> +{" "}
+                        <strong>Passion</strong> + <strong>Code</strong>
+                    </h2>
+                    <div className="col-md-6 offset-md-3 text-center">
+                        <h4 className="mb-4 mt-4">
+                            Hello hello! It's simple, actually &mdash;
+                        </h4>
+                        <h4>
+                            {" "}
+                            My background in Digital Marketing and Analytics
+                            helps me build user-centric web designs that return
+                            your investment by meeting your goals. Let's
+                            innovate together.
+                        </h4>
+                        <a
+                            role="button"
+                            className="btn btn-lg btn-outline-primary mt-4"
+                            href="mailto:contact@palashbharti.com"
+                        >
+                            Contact me
+                        </a>
                     </div>
                 </section>
-                {/* <!--End of contact section--> */}
-                <section id="portfolio" className="pb-5">
-                    <h3 className="yellow-ul mb-4">Projects</h3>
+
+                <section id="portfolio" className="pb-5 mb-5">
+                    <h2 className="text-center mb-5 yellow-ul">
+                        <strong>Projects</strong>
+                    </h2>
 
                     <div className="row">
                         <div className="col-md-4">
@@ -154,9 +94,9 @@ const Home = () => {
                                     </p>
                                     <Link
                                         to="https://flixmatch.co"
-                                        className="btn btn-primary"
+                                        className="btn btn-outline-primary "
                                     >
-                                        See the design
+                                        Visit site
                                     </Link>
                                 </div>
                             </div>
@@ -180,8 +120,14 @@ const Home = () => {
                                         Employs Wordpress and Elementor
                                     </p>
                                     <Link
+                                        to="https://theodoresrestaurant.com/"
+                                        className="btn btn-outline-primary me-3"
+                                    >
+                                        Visit site
+                                    </Link>
+                                    <Link
                                         to="/theodores-restaurant"
-                                        className="btn btn-primary"
+                                        className="btn btn-outline-primary "
                                     >
                                         See the design
                                     </Link>
@@ -211,7 +157,7 @@ const Home = () => {
                                     </p>
                                     <Link
                                         to="/new-york-times-bestsellers"
-                                        className="btn btn-primary"
+                                        className="btn btn-outline-primary "
                                     >
                                         Check it out
                                     </Link>
