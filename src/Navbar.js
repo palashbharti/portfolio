@@ -2,20 +2,22 @@ import { Link } from "react-router-dom";
 import { Outlet } from "react-router-dom";
 import "./Navbar.scss";
 import { Tooltip as ReactTooltip } from "react-tooltip";
+// import Pdf from "./Resume_PalashBharti.pdf";
 
 const Navbar = () => {
     return (
         <div id="navigationbar">
-            <nav className="navbar fixed-top navbar-light d-flex flex-row justify-content-end">
+            <nav className="navbar fixed-top navbar-light d-flex justify-content-end">
                 <ul
                     className="d-flex flex-column"
                     style={{ listStyle: "none" }}
                 >
                     <li className="nav-item me-2 mb-3" data-tooltip-id="resume">
-                        <Link
+                        <a
                             class="fa fa-file"
-                            to="/Resume_PalashBharti.pdf"
-                        ></Link>
+                            href="/Resume_PalashBharti.pdf"
+                            target="_blank"
+                        ></a>
                     </li>
 
                     <li

@@ -9,9 +9,13 @@ const Home = () => {
                     id="intro"
                     className="d-flex flex-column  align-items-center pt-5"
                 >
-                    <div className="text-center col-xs-8 col-md-2 mb-5">
+                    <div className="text-center col-xs-3 col-md-2 mb-5">
                         <img
-                            style={{ width: "100%", borderRadius: "100%" }}
+                            style={{
+                                borderRadius: "100%",
+                            }}
+                            id="headshot"
+                            className="img-fluid"
                             src="./palash.jpg"
                         />
                     </div>
@@ -47,28 +51,46 @@ const Home = () => {
                         My work = <strong>TLC</strong> +{" "}
                         <strong>Passion</strong> + <strong>Code</strong>
                     </h2>
-                    <div className="col-md-6 offset-md-3 text-center">
-                        <h4 className="mb-4 mt-4">
-                            Hello hello! It's simple, actually &mdash;
+                    <div className="col-md-6 offset-md-3 ">
+                        <h4 className="mb-4 mt-4 ">
+                            Hello hello! It's simple, actually...
                         </h4>
-                        <h4>
+                        <h4 id="skills">
                             {" "}
-                            My background in Digital Marketing and Analytics
-                            helps me build user-centric web designs that return
-                            your investment by meeting your goals. Let's
-                            innovate together.
+                            I sleep better when I:
+                            <br />
+                            - Create meaningful, beautiful work
+                            <br />
+                            - Meet deadlines
+                            <br />
+                            - Keep you in the know
+                            <br />- Meet our goals (goes without saying!)
+                            <br />- And bonus &mdash; when my experience in
+                            Digital Marketing and Analytics gives me perspective
                         </h4>
-                        <a
-                            role="button"
-                            className="btn btn-lg btn-outline-primary mt-4"
-                            href="mailto:contact@palashbharti.com"
-                        >
-                            Contact me
-                        </a>
+                        {/* <ul>
+                                <li>Create meaningful, beautiful work</li>
+                                <li>Meet deadlines</li>
+                                <li>
+                                    Keep stakeholders/clients in the
+                                    know
+                                </li>
+                                <li>Meet our goals (goes without saying!)</li>
+                            </ul> */}
+                        <h4>Let's innovate together.</h4>
+                        <p className="text-center">
+                            <a
+                                role="button"
+                                className="btn btn-lg btn-outline-primary mt-4 text-center"
+                                href="mailto:contact@palashbharti.com"
+                            >
+                                Contact me
+                            </a>
+                        </p>
                     </div>
                 </section>
 
-                <section id="portfolio" className="pb-5 mb-5">
+                <section id="portfolio" className="pb-5 mt-5 mb-5">
                     <h2 className="text-center mb-5 yellow-ul">
                         <strong>Projects</strong>
                     </h2>
@@ -94,7 +116,8 @@ const Home = () => {
                                     </p>
                                     <Link
                                         to="https://flixmatch.co"
-                                        className="btn btn-outline-primary "
+                                        className="btn btn-outline-primary"
+                                        target="_blank"
                                     >
                                         Visit site
                                     </Link>
@@ -121,6 +144,7 @@ const Home = () => {
                                     </p>
                                     <Link
                                         to="https://theodoresrestaurant.com/"
+                                        target="_blank"
                                         className="btn btn-outline-primary me-3"
                                     >
                                         Visit site

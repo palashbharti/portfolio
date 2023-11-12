@@ -6,6 +6,15 @@
         height: 100vh;
     }
 
+    @media screen and (max-width: 480px) {
+        #headshot {
+            max-width: 40%;
+        }
+        #intro {
+            padding-top: 0px;
+        }
+    }
+
     @keyframes name {
         from {
             color: #9bd3f4;
@@ -28,7 +37,7 @@
     }
 
     #intro h1 {
-        font-size: 75px;
+        font-size: 5rem;
         animation: name;
         animation-duration: 3s;
         animation-fill-mode: forwards;
@@ -36,7 +45,7 @@
     #intro h2 {
         color: #9bd3f4;
         text-align: center;
-        font-size: 35px;
+        font-size: 2.5rem;
         padding-top: 10px;
         animation: name;
         animation-duration: 2s;
@@ -63,6 +72,14 @@
         animation-fill-mode: forwards;
         animation-delay: 2.5s;
     }
+    @media screen and (max-width: 480px) {
+        #intro h1 {
+            font-size: 3rem;
+        }
+        #intro h2 {
+            font-size: 2rem;
+        }
+    }
     #intro code {
         font-size: 1.75rem;
     }
@@ -71,7 +88,9 @@
         text-decoration-color: #f29c33;
         text-underline-offset: 0.4em;
     }
-
+    h2 {
+        line-height: 3rem;
+    }
     .about {
         color: #0277b5;
         padding: 30px;
@@ -79,6 +98,11 @@
     .about h5 {
         line-height: 200%;
         color: #545454;
+    }
+    @media screen and (max-width: 480px) {
+        #about {
+            padding-top: 6rem;
+        }
     }
 
     #contact {
@@ -90,6 +114,14 @@
         box-shadow: 4px 4px 4px 3px black;
     }
 
+    #skills {
+        line-height: 3rem;
+    }
+    @media screen and (max-width: 480px) {
+        #skills {
+            line-height: 2rem;
+        }
+    }
     h5,
     p {
         color: white;
