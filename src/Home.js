@@ -52,33 +52,44 @@ const Home = () => {
                         <strong>PASSION</strong>&nbsp;+&nbsp;
                         <strong>CODE</strong>
                     </h2>
-                    <div className="col-md-6 offset-md-3 ">
-                        <div id="skills">
-                            <p className=" mt-4 ">
-                                It's simple, actually! I sleep better when I:
-                            </p>
-                            <p>
-                                &#10004; use my Digital Marketing and Analytics
-                                glasses to
-                                <br />
-                                &#10004; create meaningful, user-centric work
-                                that
-                                <br />
-                                &#10004; meets our goals and deadlines while
-                                <br />
-                                &#10004; keeping you in the know.
-                            </p>
-                            <p>Let's innovate together.</p>
+                    <div className="row">
+                        <div className="col-md-4 offset-md-1">
+                            <img
+                                alt="collage of icons depicting my values"
+                                className="img-fluid"
+                                src="./values_icons.png"
+                                id="valuescollage"
+                            />
                         </div>
-                        <p className="text-center">
-                            <a
-                                role="button"
-                                className="btn btn-lg btn-outline-primary contactbutton mt-4 text-center"
-                                href="mailto:contact@palashbharti.com"
-                            >
-                                Contact me
-                            </a>
-                        </p>
+                        <div className="col-md-6 offset-md-1">
+                            <div id="skills">
+                                <p className=" mt-4 ">
+                                    It's simple, actually! I sleep better when
+                                    I:
+                                </p>
+                                <p>
+                                    &#10004; use my Digital Marketing and
+                                    Analytics glasses to
+                                    <br />
+                                    &#10004; create meaningful, user-centric
+                                    work that
+                                    <br />
+                                    &#10004; meets our goals and deadlines while
+                                    <br />
+                                    &#10004; keeping you in the know.
+                                </p>
+                                <p>Let's innovate together.</p>
+                            </div>
+                            <p>
+                                <a
+                                    role="button"
+                                    className="btn btn-lg btn-outline-primary contactbutton mt-4 text-center"
+                                    href="mailto:contact@palashbharti.com"
+                                >
+                                    Contact me
+                                </a>
+                            </p>
+                        </div>
                     </div>
                 </section>
 
