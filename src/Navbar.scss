@@ -2,11 +2,12 @@
     @media screen and (max-width: 480px) {
         nav {
             justify-content: center !important;
-            // position: sticky;
-            // margin-bottom: 10px !important;
         }
         nav ul {
             flex-direction: row !important;
+        }
+        li {
+            font-size: 15px;
         }
         #intro {
             margin-top: 4rem;

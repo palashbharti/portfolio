@@ -12,6 +12,7 @@
         }
         #intro {
             padding-top: 0px;
+            // height: 3rem;
         }
     }
 
@@ -25,7 +26,7 @@
     }
     @keyframes lineAnimation {
         100% {
-            width: 65%;
+            width: 80%;
         }
     }
     #line {
@@ -41,6 +42,9 @@
         animation: name;
         animation-duration: 3s;
         animation-fill-mode: forwards;
+    }
+    h2 {
+        line-height: 3rem;
     }
     #intro h2 {
         color: #9bd3f4;
@@ -74,10 +78,11 @@
     }
     @media screen and (max-width: 480px) {
         #intro h1 {
-            font-size: 3rem;
+            font-size: 2.7rem;
         }
         #intro h2 {
-            font-size: 2rem;
+            font-size: 1.5rem;
+            line-height: 2rem;
         }
     }
     #intro code {
@@ -88,9 +93,7 @@
         text-decoration-color: #f29c33;
         text-underline-offset: 0.4em;
     }
-    h2 {
-        line-height: 3rem;
-    }
+
     .about {
         color: #0277b5;
         padding: 30px;
@@ -105,26 +108,16 @@
         }
     }
 
-    #contact {
-        margin-top: 20px;
-        background-color: #064943;
-        padding: 30px;
-        color: #ffd699;
-        border-radius: 20px;
-        box-shadow: 4px 4px 4px 3px black;
-    }
-
     #skills {
         line-height: 3rem;
+        color: #272838;
+        font-size: 1.3rem;
     }
     @media screen and (max-width: 480px) {
         #skills {
-            line-height: 2rem;
+            line-height: 1.6rem;
+            font-size: 1.1rem;
         }
-    }
-    h5,
-    p {
-        color: white;
     }
 
     form input {
@@ -162,6 +155,16 @@
     .btn-outline-primary:hover {
         color: #272838;
         background-color: #f29c33;
+    }
+
+    .contactbutton {
+        color: #272838;
+        background-color: #f29c33;
+    }
+
+    .contactbutton:hover {
+        color: #f29c33;
+        background-color: #272838;
     }
 
     .card {

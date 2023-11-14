@@ -48,40 +48,32 @@ const Home = () => {
                 </section>
                 <section id="about" className="about">
                     <h2 className="text-center mb-4 yellow-ul">
-                        My work = <strong>TLC</strong> +{" "}
-                        <strong>Passion</strong> + <strong>Code</strong>
+                        My work = <strong>TLC</strong>&nbsp;+&nbsp;
+                        <strong>PASSION</strong>&nbsp;+&nbsp;
+                        <strong>CODE</strong>
                     </h2>
                     <div className="col-md-6 offset-md-3 ">
-                        <h4 className="mb-4 mt-4 ">
-                            Hello hello! It's simple, actually...
-                        </h4>
-                        <h4 id="skills">
-                            {" "}
-                            I sleep better when I:
-                            <br />
-                            - Create meaningful, beautiful work
-                            <br />
-                            - Meet deadlines
-                            <br />
-                            - Keep you in the know
-                            <br />- Meet our goals (goes without saying!)
-                            <br />- And bonus &mdash; when my experience in
-                            Digital Marketing and Analytics gives me perspective
-                        </h4>
-                        {/* <ul>
-                                <li>Create meaningful, beautiful work</li>
-                                <li>Meet deadlines</li>
-                                <li>
-                                    Keep stakeholders/clients in the
-                                    know
-                                </li>
-                                <li>Meet our goals (goes without saying!)</li>
-                            </ul> */}
-                        <h4>Let's innovate together.</h4>
+                        <div id="skills">
+                            <p className=" mt-4 ">
+                                It's simple, actually! I sleep better when I:
+                            </p>
+                            <p>
+                                &#10004; use my Digital Marketing and Analytics
+                                glasses to
+                                <br />
+                                &#10004; create meaningful, user-centric work
+                                that
+                                <br />
+                                &#10004; meets our goals and deadlines while
+                                <br />
+                                &#10004; keeping you in the know.
+                            </p>
+                            <p>Let's innovate together.</p>
+                        </div>
                         <p className="text-center">
                             <a
                                 role="button"
-                                className="btn btn-lg btn-outline-primary mt-4 text-center"
+                                className="btn btn-lg btn-outline-primary contactbutton mt-4 text-center"
                                 href="mailto:contact@palashbharti.com"
                             >
                                 Contact me
@@ -92,7 +84,7 @@ const Home = () => {
 
                 <section id="portfolio" className="pb-5 mt-5 mb-5">
                     <h2 className="text-center mb-5 yellow-ul">
-                        <strong>Projects</strong>
+                        <strong>PROJECTS</strong>
                     </h2>
 
                     <div className="row">
